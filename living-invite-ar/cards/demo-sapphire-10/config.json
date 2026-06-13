@@ -1,0 +1,75 @@
+{
+  "coupleNames": "Arjun & Meera",
+  "tagline": "a new beginning",
+  "theme": "sapphire",
+  "frame": "peacock",
+  "targetsFile": "targets.mind",
+  "playlist": [
+    {
+      "type": "video",
+      "src": "videos/01.mp4",
+      "caption": "",
+      "section": ""
+    },
+    {
+      "type": "photo",
+      "src": "gallery/01.jpg",
+      "caption": "Where it all started",
+      "section": "The Beginning"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/02.jpg",
+      "caption": "A thousand little moments",
+      "section": "Our Story"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/03.jpg",
+      "caption": "And she said yes",
+      "section": "The Proposal"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/04.jpg",
+      "caption": "With our family & friends",
+      "section": "Celebration"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/05.jpg",
+      "caption": "Two hearts, one journey",
+      "section": "Forever"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/06.jpg",
+      "caption": "Every day with you",
+      "section": "Together"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/07.jpg",
+      "caption": "Laughter we'll never forget",
+      "section": "Memories"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/08.jpg",
+      "caption": "Hand in hand, always",
+      "section": "The Journey"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/09.jpg",
+      "caption": "To love and to cherish",
+      "section": "Our Promise"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/10.jpg",
+      "caption": "The adventure begins",
+      "section": "Happily Ever After"
+    }
+  ]
+}

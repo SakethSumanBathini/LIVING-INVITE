@@ -1,0 +1,88 @@
+/* Living Invite — styles. NO web fonts (system serif) for instant load.
+   The AR transparency + full-screen camera rules are copied from the working
+   V1 engine (the #ar-container block below is the critical part). */
+
+:root{
+  --bg1:#06352a; --bg2:#021c16; --gold:#e6c868; --goldDeep:#b8902f;
+  --ink:#f6efe0; --inkdim:rgba(246,239,224,.72);
+  --serif: Georgia, "Times New Roman", "Noto Serif", serif;
+}
+*{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html,body{ margin:0; height:100%; }
+body{
+  font-family:var(--serif); color:var(--ink); background:var(--bg2);
+  overflow:hidden; -webkit-user-select:none; user-select:none;
+}
+
+/* ===================================================================
+   AR CONTAINER + SCENE  (this block is why the camera is full-screen
+   and transparent — taken from the working V1 engine, do not change)
+   =================================================================== */
+#ar-container{ position:fixed; inset:0; z-index:0; }
+#ar-container a-scene,
+#ar-container canvas,
+#ar-container video{
+  position:fixed !important; inset:0 !important;
+  width:100% !important; height:100% !important; object-fit:cover;
+}
+
+/* ---------- full-screen overlay screens ---------- */
+.screen{
+  position:fixed; inset:0; z-index:30;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; gap:16px; padding:30px 26px;
+  background:radial-gradient(120% 90% at 50% 16%, var(--bg1) 0%, var(--bg2) 68%, #000 100%);
+}
+.screen.hidden{ display:none; }
+.crest{
+  width:60px; height:60px; transform:rotate(45deg); margin-bottom:6px;
+  border:2px solid var(--gold); box-shadow:inset 0 0 0 4px rgba(230,200,104,.18);
+}
+.tag{ font-size:13px; letter-spacing:.3em; text-transform:uppercase; color:var(--gold); font-weight:600; }
+.display{ font-weight:600; font-size:clamp(28px,8vw,42px); line-height:1.05; margin:2px 0; color:var(--ink); }
+.display.sm{ font-size:clamp(22px,6vw,30px); }
+.muted{ color:var(--inkdim); font-size:15px; line-height:1.5; max-width:34ch; margin:0; }
+
+.btn{
+  appearance:none; border:0; cursor:pointer; margin-top:8px;
+  font-family:var(--serif); font-size:17px; font-weight:700; letter-spacing:.01em;
+  color:#3a2a0f; padding:15px 38px; border-radius:999px; min-width:200px;
+  background:linear-gradient(180deg,#f5e6a5 0%,#e6c868 42%,#c79b34 100%);
+  box-shadow:0 8px 26px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.5);
+}
+.btn:active{ transform:scale(.98); }
+.btn:disabled{ opacity:.6; }
+
+.spinner{
+  width:40px; height:40px; border-radius:50%;
+  border:3px solid rgba(255,255,255,.22); border-top-color:var(--gold);
+  animation:spin 1s linear infinite;
+}
+@keyframes spin{ to{ transform:rotate(360deg); } }
+
+/* ---------- HUD during AR ---------- */
+.hud{ position:fixed; inset:0; z-index:20; pointer-events:none; }
+.hud.hidden{ display:none; }
+#counter{
+  position:absolute; left:50%; top:16px; transform:translateX(-50%);
+  color:var(--ink); font-size:12.5px; letter-spacing:2px;
+  background:rgba(0,0,0,.32); padding:5px 12px; border-radius:999px;
+}
+#scanHint{
+  position:absolute; left:50%; bottom:30px; transform:translateX(-50%);
+  padding:10px 18px; border-radius:999px;
+  background:rgba(0,0,0,.5); color:var(--ink); font-size:13.5px;
+  border:1px solid rgba(230,200,104,.35); backdrop-filter:blur(4px); white-space:nowrap;
+}
+#soundBtn{
+  position:absolute; right:16px; bottom:20px; pointer-events:auto; cursor:pointer;
+  width:46px; height:46px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(0,0,0,.42); border:1px solid rgba(230,200,104,.5);
+  color:var(--gold); font-size:19px; backdrop-filter:blur(4px);
+}
+.navZone{ position:absolute; top:0; bottom:0; width:32%; pointer-events:auto; background:transparent; }
+#navZoneL{ left:0; }
+#navZoneR{ right:0; }
+
+@media (prefers-reduced-motion: reduce){ .spinner{ animation:none; } }
