@@ -1,8 +1,8 @@
 {
-  "coupleNames": "Vijay & Rashmika",
-  "tagline": "together forever",
+  "coupleNames": "Happy Birthday Karthik! 🎉",
+  "tagline": "Celebrating You Today & Always",
   "theme": "emerald",
-  "frame": "gold",
+  "frame": "birthday-royal",
   "targetsFile": "targets.mind",
   "playlist": [
     {
@@ -14,32 +14,32 @@
     {
       "type": "photo",
       "src": "gallery/01.jpg",
-      "caption": "Where it all started",
-      "section": "The Beginning"
+      "caption": "Where it all began",
+      "section": "The Early Days"
     },
     {
       "type": "photo",
       "src": "gallery/02.jpg",
-      "caption": "A thousand little moments",
-      "section": "Our Story"
+      "caption": "Growing up too fast",
+      "section": "Memories"
     },
     {
       "type": "photo",
       "src": "gallery/03.jpg",
-      "caption": "And she said yes",
-      "section": "The Proposal"
+      "caption": "Always the life of the party",
+      "section": "Good Times"
     },
     {
       "type": "photo",
       "src": "gallery/04.jpg",
-      "caption": "With our family & friends",
-      "section": "Celebration"
+      "caption": "Surrounded by people who love you",
+      "section": "With Love"
     },
     {
       "type": "photo",
       "src": "gallery/05.jpg",
-      "caption": "Two hearts, one journey",
-      "section": "Forever"
+      "caption": "Here's to many more years",
+      "section": "Forever & Always"
     }
   ]
 }
