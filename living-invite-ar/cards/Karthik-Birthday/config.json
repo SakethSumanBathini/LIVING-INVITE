@@ -1,0 +1,45 @@
+{
+  "coupleNames": "Vijay & Rashmika",
+  "tagline": "together forever",
+  "theme": "emerald",
+  "frame": "gold",
+  "targetsFile": "targets.mind",
+  "playlist": [
+    {
+      "type": "video",
+      "src": "videos/01.mp4",
+      "caption": "",
+      "section": ""
+    },
+    {
+      "type": "photo",
+      "src": "gallery/01.jpg",
+      "caption": "Where it all started",
+      "section": "The Beginning"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/02.jpg",
+      "caption": "A thousand little moments",
+      "section": "Our Story"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/03.jpg",
+      "caption": "And she said yes",
+      "section": "The Proposal"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/04.jpg",
+      "caption": "With our family & friends",
+      "section": "Celebration"
+    },
+    {
+      "type": "photo",
+      "src": "gallery/05.jpg",
+      "caption": "Two hearts, one journey",
+      "section": "Forever"
+    }
+  ]
+}
