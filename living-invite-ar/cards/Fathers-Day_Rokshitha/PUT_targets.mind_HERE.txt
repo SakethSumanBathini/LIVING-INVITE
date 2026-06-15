@@ -1,0 +1,4 @@
+Compile your card's FRONT photo at:
+https://hiukim.github.io/mind-ar-js-doc/tools/compile/
+Download the .mind file, rename to targets.mind, drop it in THIS folder.
+Replace videos/01.mp4 with your real film and gallery/*.jpg with real photos.

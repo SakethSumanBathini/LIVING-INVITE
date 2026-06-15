@@ -1,0 +1,15 @@
+{
+  "coupleNames": "Happy Father's Day! 🎉",
+  "tagline": "Thank you for everything, Dad",
+  "theme": "emerald",
+  "frame": "gold",
+  "targetsFile": "targets.mind",
+  "playlist": [
+    {
+      "type": "video",
+      "src": "videos/01.mp4",
+      "caption": "",
+      "section": ""
+    }
+  ]
+}
